@@ -51,18 +51,18 @@ function draw() {
  {
       /*Uncomment correct option 
         according to PLAY state*/  
-      // // moving ground
+      // //moving ground
        scene.velocityX = -3 
       // //destroy bow
-       bow.destroy();
-      // //reset the background
-       if (scene.x < 0){
-           scene.x = scene.width/2;
-          }
+      
+       // //reset the background
+      if (scene.x < 0){
+          scene.x = scene.width/2;
+         }
       // //moving bow
        bow.y = World.mouseY      
-      // //stop background movement
-       scene.velocityX = 0;
+     // //stop background movement
+      scene.velocityX = 0;
 
   
    // release arrow when space key is pressed
@@ -93,15 +93,15 @@ function draw() {
     /*Uncomment correct option 
       according to END state*/  
       // // moving ground
-       scene.velocityX = -3 
+      // scene.velocityX = -3 
       // //destroy bow
        bow.destroy();
       // //reset the background
-       if (scene.x < 0){
-           scene.x = scene.width/2;
-          }
+      // if (scene.x < 0){
+      //     scene.x = scene.width/2;
+      //    }
       // //moving bow
-       bow.y = World.mouseY      
+      // bow.y = World.mouseY      
       // //stop background movement
        scene.velocityX = 0;
 
